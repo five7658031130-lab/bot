@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+*.env
+!.env.example
+
+# Session Files
+*.session
+*.session-journal
+
+# Logs
+*.log
+logs/
+
+# Downloads & Cache
+downloads/
+temp/
+cache/
+*.mp3
+*.mp4
+*.m4a
+*.webm
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Database
+*.db
+*.sqlite
+
+# Replit
+.replit
+.upm
+.breakpoints
