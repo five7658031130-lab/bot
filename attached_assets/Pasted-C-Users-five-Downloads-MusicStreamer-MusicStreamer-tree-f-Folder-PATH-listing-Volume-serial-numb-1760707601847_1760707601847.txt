@@ -1,0 +1,312 @@
+C:\Users\five\Downloads\MusicStreamer\MusicStreamer>tree /f
+Folder PATH listing
+Volume serial number is 8644-B242
+C:.
+│   .env
+│   .env.example
+│   .gitignore
+│   .replit
+│   2.32.2
+│   2.32.3
+│   AdvancedMusicBot.session
+│   bot.py
+│   cleanup.bat
+│   config.py
+│   OWNER_COMMANDS.md
+│   README.md
+│   replit.md
+│   requirements.txt
+│   run.bat
+│   run_ps.bat
+│   setup_windows.py
+│   WINDOWS_GUIDE.md
+│
+├───.git
+│   │   COMMIT_EDITMSG
+│   │   config
+│   │   description
+│   │   HEAD
+│   │   index
+│   │
+│   ├───hooks
+│   │       applypatch-msg.sample
+│   │       commit-msg.sample
+│   │       fsmonitor-watchman.sample
+│   │       post-update.sample
+│   │       pre-applypatch.sample
+│   │       pre-commit.sample
+│   │       pre-merge-commit.sample
+│   │       pre-push.sample
+│   │       pre-rebase.sample
+│   │       pre-receive.sample
+│   │       prepare-commit-msg.sample
+│   │       push-to-checkout.sample
+│   │       sendemail-validate.sample
+│   │       update.sample
+│   │
+│   ├───info
+│   │       exclude
+│   │
+│   ├───logs
+│   │   │   HEAD
+│   │   │
+│   │   └───refs
+│   │       ├───heads
+│   │       │       main
+│   │       │       replit-agent
+│   │       │
+│   │       └───remotes
+│   │           └───gitsafe-backup
+│   │                   main
+│   │
+│   ├───objects
+│   │   ├───01
+│   │   │       f358ad36967865d09ff2c5bbe1fee71c1d32f2
+│   │   │
+│   │   ├───03
+│   │   │       5a0a1760ccb8797591ddce8357bf9abe1bbd4d
+│   │   │
+│   │   ├───06
+│   │   │       4a8255d3ec7c4e54376f865b4071196403c681
+│   │   │
+│   │   ├───08
+│   │   │       cbd30063fb7f9efad30b0a8a4925d1c0b2e93a
+│   │   │
+│   │   ├───09
+│   │   │       011953e1cc9c08babcdfd086a44fb051b66203
+│   │   │       7cbc01f57e4ff34c4d13b74b8d879c8e6bf5f1
+│   │   │
+│   │   ├───10
+│   │   │       295f9219da7209f3c2bb188939f931bd27db4d
+│   │   │       b859bc12a96698ffce707811a9febabdfea396
+│   │   │
+│   │   ├───11
+│   │   │       29c344f72c213e19efebdf293c6d456d74098f
+│   │   │
+│   │   ├───20
+│   │   │       28aa336b0a67b4166192b833dd8771d02274af
+│   │   │
+│   │   ├───2b
+│   │   │       0a83fcde56f4b44f1f52abe8f6d05576795172
+│   │   │
+│   │   ├───34
+│   │   │       f681e9f01fada166265b8729521d8e6c407941
+│   │   │
+│   │   ├───3c
+│   │   │       7fbbfc32d0e7551cc83eaf69e89c24bbd00948
+│   │   │
+│   │   ├───3e
+│   │   │       667a6e47408848c248c1a663fa20191c9fc8b6
+│   │   │
+│   │   ├───3f
+│   │   │       e902615c7f1b3cf278d1ea7f4016df2ef8d026
+│   │   │
+│   │   ├───40
+│   │   │       d871a310bd85971d1ef2df4007d04634fca1d2
+│   │   │
+│   │   ├───47
+│   │   │       874bb45aff15bca9d4ae8fe1d77fb979d55ba2
+│   │   │
+│   │   ├───51
+│   │   │       32b54abcf2644854817f4dbb349539905b67bb
+│   │   │       c1de4acaa7036520452245439bf2ad17189418
+│   │   │
+│   │   ├───59
+│   │   │       60bb267d3f4db4243de0101fbe5ae6de68b59e
+│   │   │
+│   │   ├───5f
+│   │   │       0219a0afd07a9e82bea51703f3ddeb28110217
+│   │   │
+│   │   ├───61
+│   │   │       4edde66b8ef51cb7e2daeed7827af6d2e6b691
+│   │   │
+│   │   ├───65
+│   │   │       a5a46e4eaa5079b562ac6a0669d51aae23932f
+│   │   │
+│   │   ├───68
+│   │   │       814aef165515aacb06d7fb36132bb8bc030d3b
+│   │   │
+│   │   ├───69
+│   │   │       73c5561917e22eaf3a464503252ee2f29b5527
+│   │   │
+│   │   ├───6a
+│   │   │       8b5dffad810568aa5d973c37eccbe0c986cbd4
+│   │   │
+│   │   ├───6c
+│   │   │       3e8e76b3d932a9b05b00604de923b863b47cc3
+│   │   │
+│   │   ├───70
+│   │   │       801c254de7a3af19cc3c4204b9d47ac1078110
+│   │   │
+│   │   ├───71
+│   │   │       d9990f22a528f012e8216de64d9c90a25f3165
+│   │   │
+│   │   ├───73
+│   │   │       c3f8a146d677884798739592c0a7a57b7c030c
+│   │   │
+│   │   ├───76
+│   │   │       cafe424eb7d72028d45d66634d9b095fdeb29e
+│   │   │
+│   │   ├───79
+│   │   │       c648c1a736f2f47cda1182464a78fc2bb45a42
+│   │   │
+│   │   ├───7a
+│   │   │       b7ed387405e0886f0de3580fcf459526db514e
+│   │   │
+│   │   ├───7c
+│   │   │       1650422e4bd227b9168047fa093508b48346c6
+│   │   │
+│   │   ├───7f
+│   │   │       c926b13ac79a8c70026a3d5eeeba0e6c8b585f
+│   │   │
+│   │   ├───82
+│   │   │       b1dd8690f7a5006ce46ab38218eeb983abad6a
+│   │   │
+│   │   ├───83
+│   │   │       5b5987435bc058a1859e30ee87c9f4d9444a55
+│   │   │
+│   │   ├───9a
+│   │   │       05be0ee8517b58d405322805c4aabc4d009fcb
+│   │   │
+│   │   ├───9f
+│   │   │       6056d0f9b84f2c26587888c790664068547821
+│   │   │
+│   │   ├───a1
+│   │   │       4d86f83e95fc9209a33ac5f31d36ec4f52b69b
+│   │   │       730644a267bd92303b39ac5914e4ab3d9974c8
+│   │   │
+│   │   ├───a2
+│   │   │       4c2b7b6e1788d367d18c3778f37604f549993c
+│   │   │
+│   │   ├───a3
+│   │   │       58a1529b48d240b205da2397a0c10659a1b2b0
+│   │   │
+│   │   ├───a4
+│   │   │       92181bce1a7fd5f5fbc413e8b4537b2fb12487
+│   │   │
+│   │   ├───a6
+│   │   │       cd0f49fcca74989ed5dad520b94be1d042421e
+│   │   │
+│   │   ├───a9
+│   │   │       23102040ca63854f61706ac68d2f98495b9429
+│   │   │
+│   │   ├───b1
+│   │   │       16febb5cb18bd18b3555451e06e303229507c7
+│   │   │
+│   │   ├───b5
+│   │   │       5cb4516928fb09e5700da3d78e146a8f31b37e
+│   │   │
+│   │   ├───b6
+│   │   │       dc1c2e7358af21d5bcc935b4063b31b6c474c5
+│   │   │
+│   │   ├───ba
+│   │   │       a2cca39363f10deb41e4594dcb11df1d09bd3a
+│   │   │
+│   │   ├───bd
+│   │   │       0a8141b7c03b22a594cfc795a21cd5615de744
+│   │   │
+│   │   ├───bf
+│   │   │       533d4a85e76ed8afad9063f00f17ec8b6896c2
+│   │   │
+│   │   ├───c2
+│   │   │       4bbccd86abf8f6a95926a1440715c3c25631dc
+│   │   │
+│   │   ├───c7
+│   │   │       454f7d15ca625254e8f3112aa6852d239733e8
+│   │   │
+│   │   ├───cf
+│   │   │       068596c4959a022a20805fca3998c058a52e2f
+│   │   │
+│   │   ├───d3
+│   │   │       8a3765adbbbd471b5e8ce7b793192c6043354b
+│   │   │
+│   │   ├───d6
+│   │   │       230d75891a70407b31fe66dfc8f00106d02795
+│   │   │
+│   │   ├───eb
+│   │   │       94c8ffa7389f3bec27e4cbea7644245431383e
+│   │   │
+│   │   ├───ed
+│   │   │       4da803780f5d8f6718a2ee510446095eef06c9
+│   │   │
+│   │   ├───f4
+│   │   │       26752c95f1c3a684ce920d1573eeb73be4d3ef
+│   │   │
+│   │   ├───f6
+│   │   │       ac675c606814658f5ceda72633fe078946d3d6
+│   │   │
+│   │   ├───fa
+│   │   │       bb3754b0636a74f124206cf1e365bb31cec1da
+│   │   │
+│   │   ├───info
+│   │   └───pack
+│   └───refs
+│       ├───heads
+│       │       main
+│       │       replit-agent
+│       │
+│       ├───remotes
+│       │   └───gitsafe-backup
+│       │           main
+│       │
+│       ├───replit
+│       │       agent-ledger
+│       │
+│       └───tags
+├───.local
+│   └───state
+│       └───replit
+│           └───agent
+│                   .agent_state_10b859bc12a96698ffce707811a9febabdfea396.bin
+│                   .agent_state_1129c344f72c213e19efebdf293c6d456d74098f.bin
+│                   .agent_state_47874bb45aff15bca9d4ae8fe1d77fb979d55ba2.bin
+│                   .agent_state_51c1de4acaa7036520452245439bf2ad17189418.bin
+│                   .agent_state_5960bb267d3f4db4243de0101fbe5ae6de68b59e.bin
+│                   .agent_state_ed4da803780f5d8f6718a2ee510446095eef06c9.bin
+│                   .agent_state_main.bin
+│                   .latest.json
+│                   repl_state.bin
+│
+├───cache
+├───downloads
+├───logs
+│       bot.log
+│
+├───plugins
+│   │   advanced_owner.py
+│   │   inline.py
+│   │   lyrics.py
+│   │   music.py
+│   │   owner.py
+│   │   start.py
+│   │   voice.py
+│   │
+│   └───__pycache__
+│           advanced_owner.cpython-311.pyc
+│           advanced_owner.cpython-313.pyc
+│           inline.cpython-311.pyc
+│           lyrics.cpython-311.pyc
+│           music.cpython-311.pyc
+│           owner.cpython-311.pyc
+│           owner.cpython-313.pyc
+│           start.cpython-311.pyc
+│           voice.cpython-311.pyc
+│
+├───temp
+├───utils
+│       database.py
+│       downloader.py
+│       lyrics_fetcher.py
+│       voice_recognition.py
+│       __init__.py
+│
+└───__pycache__
+        config.cpython-311.pyc
+        config.cpython-313.pyc
+
+
+C:\Users\five\Downloads\MusicStreamer\MusicStreamer>
+
+
+
+
