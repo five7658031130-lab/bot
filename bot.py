@@ -24,8 +24,7 @@ logger = logging.getLogger(__name__)
 try:
     from pyrogram import Client, idle
     from pyrogram.errors import ApiIdInvalid, AccessTokenInvalid
-    from py_tgcalls import PyTgCalls
-    from py_tgcalls.types import StreamType
+    from pytgcalls import PyTgCalls
     import config
 except ImportError as e:
     logger.critical(f"Failed to import required modules: {e}")

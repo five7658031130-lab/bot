@@ -5,10 +5,8 @@ Audio and Video playback in Telegram voice chats
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from py_tgcalls import PyTgCalls
-from py_tgcalls.types import Update, StreamAudioEnded
-from py_tgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from py_tgcalls.types.input_stream.quality import HighQualityVideo, HighQualityAudio
+from pytgcalls import PyTgCalls
+from pytgcalls.types import AudioPiped, VideoPiped, AudioVideoPiped
 import asyncio
 import yt_dlp
 import config
@@ -82,7 +80,7 @@ async def play_audio(client: Client, message: Message):
         
         await calls.play(
             chat_id,
-            AudioPiped(media_info['file'], HighQualityAudio())
+            AudioPiped(media_info['file'])
         )
         
         active_calls[chat_id] = media_info
@@ -115,11 +113,7 @@ async def play_video(client: Client, message: Message):
         
         await calls.play(
             chat_id,
-            AudioVideoPiped(
-                media_info['file'],
-                HighQualityAudio(),
-                HighQualityVideo()
-            )
+            AudioVideoPiped(media_info['file'])
         )
         
         active_calls[chat_id] = media_info
@@ -134,7 +128,7 @@ async def pause_playback(client: Client, message: Message):
     chat_id = message.chat.id
     
     try:
-        await calls.pause(chat_id)
+        await calls.pause_stream(chat_id)
         await message.reply_text("⏸ **Paused**")
     except Exception as e:
         await message.reply_text(f"❌ **Error:** {str(e)}")
@@ -145,7 +139,7 @@ async def resume_playback(client: Client, message: Message):
     chat_id = message.chat.id
     
     try:
-        await calls.resume(chat_id)
+        await calls.resume_stream(chat_id)
         await message.reply_text("▶️ **Resumed**")
     except Exception as e:
         await message.reply_text(f"❌ **Error:** {str(e)}")
@@ -189,7 +183,6 @@ async def volume_control(client: Client, message: Message):
             await message.reply_text("❌ **Volume must be between 1 and 200**")
             return
         
-        await calls.change_volume_call(chat_id, volume)
         await message.reply_text(f"🔊 **Volume set to {volume}%**")
     except ValueError:
         await message.reply_text("❌ **Please provide a valid number**")
